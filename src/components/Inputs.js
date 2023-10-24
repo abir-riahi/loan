@@ -30,6 +30,7 @@ const Inputs = () => {
         if (parseInt(months) > parseInt(minMonth) && parseInt(months) <= parseInt(maxMonth)) {
             setMonths(e => parseInt(e) - 1);
             dispatch(actual_data(amount ? amount : maxAmount, months))
+            console.log(amount)
         }
     }
     const changeAmount = (e) => {
